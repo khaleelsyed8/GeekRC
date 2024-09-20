@@ -59,8 +59,8 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('video-description').value = video.description;
             document.getElementById('video-details').style.display = 'block';
           } else {
-            console.error('Video not found');
-            alert('Video not found');
+            console.error('This Functionality has been disabled for Security reasons, We are finding an alternative.');
+            alert('This Functionality has been disabled for Security reasons');
           }
         })
         .catch(error => {

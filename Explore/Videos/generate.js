@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   
     function fetchVideoDetails(videoId) {
-      const apiKey = 'AIzaSyBIIiOMA3yM4v8DBDxNBUAe5b2z3S0HBI0'; // Replace with your actual API key
+      const apiKey = 'Replace with your actual API key'; // 
       const apiUrl = `https://www.googleapis.com/youtube/v3/videos?id=${videoId}&key=${apiKey}&part=snippet`;
   
       fetch(apiUrl)

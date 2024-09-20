@@ -10,8 +10,9 @@ Welcome to the **Explore Tab** of GeekRC! Here, you'll discover a wealth of reso
 - [Python Scripts](#python-scripts)
 - [GRC Videos](#grc-videos)
 - [Cyber News](#cyber-news)
-```
+
 ## Folder Structure
+```
 /GeekRC
 │
 ├── /blogs

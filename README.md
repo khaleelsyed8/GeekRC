@@ -4,12 +4,12 @@
 Welcome to the **Explore Tab** of GeekRC! Here, you'll discover a wealth of resources designed to enhance your understanding of Cyber Security and Governance, Risk, and Compliance (GRC). Dive in and explore!
 
 ## Contents
-- [Blogs](#blogs)
-- [Playbooks](#playbooks)
-- [Games](#games)
-- [Python Scripts](#python-scripts)
-- [GRC Videos](#grc-videos)
-- [Cyber News](#cyber-news)
+- [Blogs](https://khaleelsyed8.github.io/GeekRC/Blogs/home.html)
+- [Playbooks](https://khaleelsyed8.github.io/GeekRC/Playbook/index.html)
+- [Games](https://khaleelsyed8.github.io/GeekRC/Game/home.html)
+- [Python Scripts](https://khaleelsyed8.github.io/GeekRC/Explore/Python-Scripts/index.html)
+- [GRC Videos](https://khaleelsyed8.github.io/GeekRC/Explore/Videos/home.html)
+- [Cyber News](https://khaleelsyed8.github.io/GeekRC/Explore/Cybrews/index.html)
 
 ## Folder Structure
 ```

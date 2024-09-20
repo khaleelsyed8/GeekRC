@@ -1,0 +1,136 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f2f5;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: #12AD2B;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #12AD2B;
+}
+a:hover{
+    color: #2c3e50;
+}
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+.article {
+    background-color: white;
+    border: 1px solid #e1e4e8;
+    padding: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.article:hover {
+    transform: translateY(-5px);
+}
+
+.article h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    font-size: 1.8em;
+}
+
+.article h2 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.article h2 a:hover {
+    color: #3498db;
+}
+
+.article img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.article .meta {
+    font-size: 0.95em;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.article .meta strong {
+    color: #34495e;
+}
+
+.article .description {
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 1.05em;
+}
+
+.article .content {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.article .keywords, .article .country, .article .language {
+    font-size: 0.9em;
+    color: #34495e;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#load-more {
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#load-more:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}

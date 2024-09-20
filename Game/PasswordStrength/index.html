@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Password Validation Check</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="../home.html"> &lt; Go home</a>
+    </header>
+    <div class="wrapper">
+        <label class="enter">Password Validation Check</label>
+        <div class="mail-field">
+            <input type="email" placeholder="Name@domain.com" id="email">
+        </div>
+      <div class="pass-field">
+        <input type="password" placeholder="Create password" id="password">
+      </div>
+      <div class="content">
+        <p>Password must contain</p>
+        <ul class="requirement-list">
+          <li>
+            <i class="fa-solid fa-circle"></i>
+            <span>At least 8 characters length</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle"></i>
+            <span>At least 1 number (0...9)</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle"></i>
+            <span>At least 1 lowercase letter (a...z)</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle"></i>
+            <span>At least 1 special symbol (!...$)</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle"></i>
+            <span>At least 1 uppercase letter (A...Z)</span>
+          </li>
+        </ul>
+        <div>
+            <input type="button" value="Check" class="button" onclick="showDialog()">
+        </div>
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeDialog()">&times;</span>
+            <p>Stay Secure</p>
+        </div>
+    </div>
+    <footer>
+      <p>Want to Know more on How to Protect Yourself?
+        <a href="https://www.isaca.org/resources/isaca-journal/past-issues/2014/jonline-reinspecting-password-account-lockout-and-audit-policies">Click Here</a>
+      </p><br>
+      <p>Want to Know If your already a part of the hacked circle?
+        <a href="https://haveibeenpwned.com/">Check Here</a>
+      </p><br>
+    </footer>
+  </body>
+</html>

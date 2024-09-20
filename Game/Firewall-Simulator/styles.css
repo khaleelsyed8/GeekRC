@@ -1,0 +1,125 @@
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 10px; /* Add padding to ensure space around the edges on smaller screens */
+    box-sizing: border-box;
+}
+header {
+    margin-bottom: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: #333;
+    font-size: large;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Set width to 100% by default for responsiveness */
+    max-width: 400px; /* Set a max-width so it doesn't get too wide on large screens */
+    margin: 15px;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+.config-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.rules {
+    margin-top: 20px;
+}
+
+#rulesList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#rulesList li {
+    background-color: #f8f8f8;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+#rulesList li:hover {
+    transform: scale(1.02);
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+.traffic-simulator, .logs {
+    margin-top: 20px;
+}
+
+#browserOutput {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    height: 100px;
+    overflow-y: auto;
+}
+
+#logsList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#logsList li {
+    background-color: #eef;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+}

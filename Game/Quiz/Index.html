@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybuiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+            <a href="../home.html" class="homes"> &lt; Go home</a>
+    </header>
+    <div class="mainbody">
+        <div class="quiz-container">
+            <h2>Do you think that you are safe from hackers?</h2>
+            <div id="difficulty-selection">
+                <h2>Select Difficulty:</h2>
+                <button class="difficulty-btn" onclick="startQuiz('easy')">No, Let's start Easy</button>
+                <button class="difficulty-btn" onclick="startQuiz('medium')">I think I've got this - Medium</button>
+                <button class="difficulty-btn" onclick="startQuiz('hard')">I'm a pro - Hard</button>
+            </div>
+            <div id="quiz-content" class="hidden">
+                <div id="progress-bar">
+                    <div id="progress"></div>
+                </div>
+                <div id="question-box">
+                    <h3 id="question"></h3>
+                </div>
+                <div id="answer-buttons" class="btn-container">
+                    <!-- Answer buttons will be generated here -->
+                </div>
+                <div id="result-message" class="hidden">
+                    <p id="result-text"></p>
+                </div>
+                <div id="explanation-box" class="hidden">
+                    <p id="explanation-text"></p>
+                </div>
+                <button id="next-btn" class="hidden" onclick="nextQuestion()">Next Question</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

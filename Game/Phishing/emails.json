@@ -1,0 +1,60 @@
+{
+    "emails": [
+        {
+            "id": 1,
+            "title": "#1 Tax Scam Phish",
+            "from": "no-reply@taxauthority.gov",
+            "subject": "Urgent: Action Required for Unpaid Taxes",
+            "body": "Dear Taxpayer,<br><br>Our records indicate that you have an outstanding balance for unpaid taxes. Immediate action is required to avoid penalties and legal actions.<br><br>Please click the link below to review your account and make a payment:<br><br><a href=\"http://fake-tax-authority.com/payment\">Click here to review your account</a><br><br>Failure to respond within 7 days will result in additional fines and possible legal action.<br><br>Thank you for your prompt attention to this matter.<br><br>Sincerely,<br><br>The Tax Authority"
+        },
+        {
+            "id": 2,
+            "title": "#2 Job Scam Phish",
+            "from": "hr@googIe.com",
+            "subject": "Congratulations! You've Been Shortlisted for Google",
+            "body": "Dear Applicant,<br><br>We are pleased to inform you that you have been selected for the position of Senior Project Manager at Google India. with an annual package of ₹50,20,000.<br><br>Your skills and experience are a perfect match for our needs, and we are excited to bring you on board. Please find the attached contract and fill in your personal details, including your bank account information for salary processing.<br><br><a href=\"http://fake-huge-company.com/contract\">Click here to download the contract<a><br><br>We need the completed forms back within 48 hours to proceed with your onboarding. Failure to respond in time will result in the offer being withdrawn.<br><br>We look forward to having you as part of our team.<br><br>Best regards,<br><br>HR Department<br>Huge Company Inc."
+        },
+        {
+            "id": 3,
+            "title": "#3 Lottery Scam Phish",
+            "from": "lottery@international-lotto.com",
+            "subject": "Congratulations! You've Won the International Lottery",
+            "body": "Dear Winner,<br><br>We are thrilled to inform you that you have been selected as the winner of the International Lottery! You have won a cash prize of ₹10,00,00,000 (Ten Crore Rupees).<br><br>To claim your prize, please provide us with your full name, address, date of birth, and bank account details. This information is necessary to process your winnings and transfer the funds to your account.<br><br><a href=\"http://fake-lottery.com/claim)\">Click here to claim your prize</a><br><br>Please note that you must respond within 7 days to claim your prize, or it will be forfeited.<br><br>Congratulations once again, and we look forward to your prompt response.<br><br>Best regards,<br><br>The International Lottery Team"
+        },
+        {
+            "id": 4,
+            "title": "#4 Account Suspension Phish",
+            "from": "support@bankingsafe.com",
+            "subject": "Immediate Action Required: Your Account Will Be Suspended",
+            "body": "Dear [Name],<br><br>We regret to inform you that your SecureBank account has been flagged for suspicious activity. To prevent your account from being suspended, please verify your identity by clicking the link below within 24 hours.<br><br>Failure to respond will result in immediate suspension of your account.<br><br><a href=\"http://bankingsafe-verification.com\">Verify Now</a><br><br>If you believe this is a mistake, please contact our support team immediately.<br><br>Best regards,<br><br>SecureBank Support Team"
+        },
+        {
+            "id": 5,
+            "title": "#5 Confidential Document Phish",
+            "from": "no-reply@secretdocs.com",
+            "subject": "You Have Received a Confidential Document",
+            "body": "Dear [Name],<br><br>You have received a confidential document from John Doe. To view the document, click on the secure link below:<br><br><a href=\"http://secure-docs-fake.com\">View Document</a><br><br>This document contains sensitive information, so please ensure you view it within the next 48 hours. Failure to do so may result in restricted access.<br><br>Best regards,<br><br>SecretDocs Team"
+        },
+        {
+            "id": 6,
+            "title": "#6 CEO Fraud Phish",
+            "from": "ceo@techcorp.com",
+            "subject": "Urgent: Payment Required for Vendor Invoice",
+            "body": "Hi Sarah,<br><br>I need you to process a payment for an important vendor today. We are finalizing a large contract, and this payment is crucial. Please make the wire transfer to the details provided below:<br><br>Vendor Name: FastSupply Inc.<br>Amount: $15,000<br>Bank Account: 123456789<br><br>Let me know once it's done. This is extremely time-sensitive, so please do not delay.<br><br>Thanks,<br><br>Michael, CEO of TechCorp"
+        },
+        {
+            "id": 7,
+            "title": "#7 Software Update Phish",
+            "from": "support@updatesecurity.com",
+            "subject": "Critical Security Update for Your System",
+            "body": "Dear [Name],<br><br>Our system has detected that your SecureShield antivirus software is outdated, which poses a significant security risk. To protect your data and improve system performance, please install the latest security patch by clicking the link below:<br><br><a href=\"http://updatesecure-fake.com\">Update Now</a><br><br>This update is mandatory and failure to comply could result in your system being vulnerable to potential threats.<br><br>Thank you,<br><br>SecureShield Technical Support"
+        },
+        {
+            "id": 8,
+            "title": "#8 Gift Voucher Phish",
+            "from": "promo@winbigrewards.com",
+            "subject": "You've Earned a Free $100 Gift Voucher!",
+            "body": "Dear [Name],<br><br>Congratulations! You have been selected to receive a $100 gift voucher for your continued support of WinBig Rewards. To claim your voucher, click the link below and enter your details:<br><br><a href=\"http://winbigvoucher-fake.com\">Claim Your Voucher</a><br><br>Hurry, this offer is only valid for the next 48 hours!<br><br>Best regards,<br><br>WinBig Promotions Team"
+        }
+    ]
+}

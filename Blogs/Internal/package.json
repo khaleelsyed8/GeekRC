@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "marked": "^13.0.2",
+    "quill": "^2.0.2"
+  }
+}

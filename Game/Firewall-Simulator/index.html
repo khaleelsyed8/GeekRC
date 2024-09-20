@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firewall Configuration Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="../home.html"> &lt; Go home</a>
+      </header>
+    <div class="container">
+        <h1>Firewall Configuration Simulator</h1>
+        <div class="config-form">
+            <input type="text" id="ipAddress" placeholder="IP Address">
+            <input type="text" id="port" placeholder="Port">
+            <select id="action">
+                <option value="allow">Allow</option>
+                <option value="deny">Deny</option>
+            </select>
+            <button id="addRule">Add Rule</button>
+        </div>
+        
+        <div class="rules">
+            <h2>Configured Rules</h2>
+            <ul id="rulesList"></ul>
+        </div>
+        
+        <div class="traffic-simulator">
+            <h2>Web Browser Simulator</h2>
+            <input type="text" id="urlInput" placeholder="Enter URL">
+            <button id="visitUrl">Visit</button>
+            <div id="browserOutput"></div>
+        </div>
+        
+        <div class="logs">
+            <h2>Access Logs</h2>
+            <ul id="logsList"></ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

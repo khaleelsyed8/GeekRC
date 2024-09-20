@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futuristic YouTube Clone</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header class="main-header">
+      <img src="logo.png" alt="Logo" class="logo">
+      <nav>
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="generate.html" class="nav-link">Generate</a>
+      </nav>
+    </header>
+    <header>
+      <h1>Learning GRC</h1>
+      <input type="text" id="search" placeholder="Search videos...">
+    </header>
+    <section id="categories">
+      <button class="category" data-category="all">All</button>
+      <!-- Categories will be dynamically generated here -->
+    </section>
+    <main id="video-list">
+      <!-- Video list will be populated here -->
+    </main>
+  </div>
+
+  <!-- Modal for zoomed-in video and recommendations -->
+  <div id="video-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-video">
+        <iframe id="modal-video-frame" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-recommendations">
+        <h2>Recommended Videos</h2>
+        <div id="recommendations-list">
+          <!-- Recommendations will be populated here -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="scripty.js"></script>
+</body>
+</html>

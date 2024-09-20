@@ -1,0 +1,143 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-button:hover{
+    background-color: black; 
+    color: white;
+}
+
+.nav-button {
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 6px 6px 3px 3px; 
+    padding: 8px 16px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 15px;
+    
+}
+.envelopes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.envelope {
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.envelope-img {
+    width: 100%;
+    max-width: 600px; /* Set a maximum width if needed */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.envelope-img.open {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.envelope:hover .envelope-img.closed {
+    opacity: 0;
+}
+
+.envelope:hover .envelope-img.open {
+    opacity: 1;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.close-btn {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+}
+.knowledge{
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+}
+h1{
+    padding-left: 20px;
+}
+.element{
+    display: column;
+    text-align: justify;
+    padding: 10px;
+}
+.Steps{
+    padding: 20px;
+    text-align: justify;
+    width: 90%;
+    display: grid;
+    justify-content: center;
+}
+.Steps li{
+    margin-bottom: 6px;
+    list-style: none;
+    display: grid;
+}
+footer{
+    background-color: #000;
+    color: #fff;
+    font-size: medium;
+    width: 100%;
+    padding: 10px;
+}
+footer a{
+    color: rgb(72, 158, 229);
+    text-decoration: none;
+}
+@media (min-width: 768px) {
+    .knowledge {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Grid layout for smaller screens */
+@media (max-width: 767px) {
+    .knowledge {
+        grid-template-columns: 1fr;
+    }
+    .popup-content {
+        padding: 20px;
+        border-radius: 5px;
+        width: 100%;
+    }   
+}

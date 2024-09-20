@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Blog Post</title>
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Create a Blog Post</h1>
+    <form id="blogPostForm">
+        <label for="title">Title:</label>
+        <input type="text" id="title" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" required>
+
+        <label for="category">Category:</label>
+        <input type="text" id="category" required>
+
+        <label for="summary">Summary:</label>
+        <textarea id="summary" required></textarea>
+
+        <label for="editor">Content:</label>
+        <div id="editor"></div>
+
+        <div id="custom-buttons">
+            <button type="button" id="image-button">Add Image</button>
+            <button type="button" id="video-button">Add Video</button>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="json-output" style="display: none;">
+        <h2>JSON Output:</h2>
+        <pre id="json-display"></pre>
+        <button id="copy-json">Copy JSON</button>
+    </div>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="scripting.js"></script>
+</body>
+</html>

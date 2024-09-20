@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <a href="../Explore/index.html">Home</a>
+            <a href="../Blogs/Home.html">Blogs</a>
+            <a href="../Game/home.html">Games</a>
+            <a href="Internal/index.html" class="play-book">Write a Play</a>
+        </nav>
+    </header>
+    <main>
+        <section class="search-section">
+            <h1>Searching for Solutions?</h1>
+            <p>Not Everything, but security related...You'll find them here.</p>
+            <button id="searchButton">Let's Go</button>
+        </section>
+        <section class="playbooks" id="playbooksContainer">
+            <!-- Playbook cards will be injected here by JavaScript -->
+        </section>
+    </main>
+    <div id="playbookModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="playbookDisplay"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer>
+    We are in development!! | Support us by sharing us | Thank you for your love.
+</footer>
+</html>

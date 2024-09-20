@@ -1,0 +1,208 @@
+{
+    "easy": [
+        {
+            "question": "What should you do before clicking a link in an email?",
+            "answers": [
+                {"text": "Click it immediately", "correct": false},
+                {"text": "Hover over the link to see the URL", "correct": true},
+                {"text": "Ignore the email", "correct": false}
+            ],
+            "explanation":"When you hover over an email, you can see where the website it directing the link to, if the redirection website seems unknown, Do not click on the link"
+        },
+        {
+            "question": "Is it safe to open email attachments from unknown senders?",
+            "answers": [
+                {"text": "Yes, if they look interesting", "correct": false},
+                {"text": "Only if they are Word documents", "correct": false},
+                {"text": "No, it's risky", "correct": true}
+            ],
+            "explanation":"No, It's risky, the emails might contain trojans"
+        },
+        {
+            "question": "What does HTTPS signify in a website URL?",
+            "answers": [
+                {"text": "The website is secure", "correct": true},
+                {"text": "The website is slow", "correct": false},
+                {"text": "The website is free", "correct": false}
+            ],
+            "explanation":"S is HTTPS stands for secure, which helps the connection stay secured between you and the website"
+        },
+        {
+            "question": "What should you avoid when browsing the internet?",
+            "answers": [
+                {"text": "Clicking on pop-up ads", "correct": true},
+                {"text": "Reading news articles", "correct": false},
+                {"text": "Watching videos", "correct": false}
+            ],
+            "explanation":"Pop-up ads can trigger adware or lead you to malicious links and websites"
+        },
+        {
+            "question": "What is a safe practice when downloading software?",
+            "answers": [
+                {"text": "Download from official websites", "correct": true},
+                {"text": "Download from any site with a download button", "correct": false},
+                {"text": "Download from email attachments", "correct": false}
+            ],
+            "explanation":"The other 2 are really dangerous, you should not download anything that you find on the internet"
+        },
+        {
+            "question": "What should you do if a website asks for your personal information?",
+            "answers": [
+                {"text": "Provide it if the site looks legit", "correct": false},
+                {"text": "Check if the site uses HTTPS", "correct": true},
+                {"text": "Ignore the request", "correct": false}
+            ],
+            "explanation":"The site may look legit but still may not be one, Be careful even when entering Personal Info on Websites with Https as well "
+        },
+        {
+            "question": "Why is it important to keep your browser up-to-date?",
+            "answers": [
+                {"text": "For better security features", "correct": true},
+                {"text": "To get new themes", "correct": false},
+                {"text": "To speed up internet", "correct": false}
+            ],
+            "explanation":"The most used browsers are always trying to add better security features, add patches for any vulnerabilites found, Always the best option"
+        },
+        {
+            "question": "Which one is a sign of phishing?",
+            "answers": [
+                {"text": "An email asking for your password", "correct": true},
+                {"text": "An email from a friend", "correct": false},
+                {"text": "An email with a discount offer", "correct": false}
+            ],
+            "explanation":"Don't share any private/secure data with anyone even your friends"
+        }
+    ],
+    "medium": [
+        {
+            "question": "Is it safe to download software from unknown third-party websites?",
+            "answers": [
+                {"text": "Yes, if the site looks professional", "correct": false},
+                {"text": "Only if you trust the source", "correct": false},
+                {"text": "No, it's risky", "correct": true}
+            ]
+        },
+        {
+            "question": "What is a potential risk of using public Wi-Fi?",
+            "answers": [
+                {"text": "Slow internet speed", "correct": false},
+                {"text": "Exposure to hackers", "correct": true},
+                {"text": "Limited data usage", "correct": false}
+            ]
+        },
+        {
+            "question": "What should you look for in a website's privacy policy?",
+            "answers": [
+                {"text": "How your data is used", "correct": true},
+                {"text": "Discounts offered", "correct": false},
+                {"text": "Website design", "correct": false}
+            ]
+        },
+        {
+            "question": "Why should you avoid using the same password for multiple accounts?",
+            "answers": [
+                {"text": "It increases the risk of multiple accounts being hacked", "correct": true},
+                {"text": "It's hard to remember", "correct": false},
+                {"text": "Websites might not allow it", "correct": false}
+            ]
+        },
+        {
+            "question": "What is a sign that a software download is suspicious?",
+            "answers": [
+                {"text": "It offers a free trial", "correct": false},
+                {"text": "It requires disabling your antivirus", "correct": true},
+                {"text": "It has many reviews", "correct": false}
+            ]
+        },
+        {
+            "question": "What should you do if a website offers a deal that seems too good to be true?",
+            "answers": [
+                {"text": "Take advantage of it", "correct": false},
+                {"text": "Check if the website is legitimate", "correct": true},
+                {"text": "Share the deal with friends", "correct": false}
+            ]
+        },
+        {
+            "question": "What is the safest way to update software?",
+            "answers": [
+                {"text": "Download updates directly from the software’s official website", "correct": true},
+                {"text": "Use third-party update tools", "correct": false},
+                {"text": "Ignore updates", "correct": false}
+            ]
+        },
+        {
+            "question": "What is a browser extension?",
+            "answers": [
+                {"text": "A software add-on that provides additional features", "correct": true},
+                {"text": "A way to increase internet speed", "correct": false},
+                {"text": "A tool to change your IP address", "correct": false}
+            ]
+        }
+    ],
+    "hard": [
+        {
+            "question": "What is a common sign that a website is secure?",
+            "answers": [
+                {"text": "It has a lot of pop-up ads", "correct": false},
+                {"text": "It uses HTTPS in the URL", "correct": true},
+                {"text": "It asks for personal information right away", "correct": false}
+            ]
+        },
+        {
+            "question": "What is a zero-day exploit?",
+            "answers": [
+                {"text": "A software vulnerability that is known and fixed", "correct": false},
+                {"text": "A vulnerability unknown to the software maker that is exploited", "correct": true},
+                {"text": "A feature in new software releases", "correct": false}
+            ]
+        },
+        {
+            "question": "How does encryption help secure your data?",
+            "answers": [
+                {"text": "By converting data into a code to prevent unauthorized access", "correct": true},
+                {"text": "By speeding up the data transmission", "correct": false},
+                {"text": "By making your data public", "correct": false}
+            ]
+        },
+        {
+            "question": "What is social engineering?",
+            "answers": [
+                {"text": "A hacking method that relies on human interaction", "correct": true},
+                {"text": "A type of encryption", "correct": false},
+                {"text": "A software update process", "correct": false}
+            ]
+        },
+        {
+            "question": "Why is it important to use a Virtual Private Network (VPN)?",
+            "answers": [
+                {"text": "To access restricted websites", "correct": false},
+                {"text": "To protect your online privacy", "correct": true},
+                {"text": "To increase internet speed", "correct": false}
+            ]
+        },
+        {
+            "question": "What should you be cautious of when using browser extensions?",
+            "answers": [
+                {"text": "Their ability to slow down your browser", "correct": false},
+                {"text": "Their potential to track your browsing data", "correct": true},
+                {"text": "Their impact on your internet speed", "correct": false}
+            ]
+        },
+        {
+            "question": "What is two-factor authentication (2FA)?",
+            "answers": [
+                {"text": "A security process that requires two different forms of identification", "correct": true},
+                {"text": "A method to double your internet speed", "correct": false},
+                {"text": "A software that blocks malware", "correct": false}
+            ]
+        },
+        {
+            "question": "What should you do if a website's SSL certificate is expired?",
+            "answers": [
+                {"text": "Continue browsing the site", "correct": false},
+                {"text": "Avoid entering any personal information on the site", "correct": true},
+                {"text": "Ignore the warning and proceed", "correct": false}
+            ]
+        }
+    ]
+}

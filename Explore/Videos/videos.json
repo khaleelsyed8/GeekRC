@@ -1,0 +1,46 @@
+[
+    {
+      "id": "vKUtU4XmGn8",
+      "title": "What is GRC in Cyber Security",
+      "description": "Learn About Governance, Risk and Compliance",
+      "categories": ["Cyber Security", "GRC"]
+    },
+    {
+      "id": "Kf7Motm36Go",
+      "title": "The Solar Winds hack",
+      "description": "What to learn the Largest Espionage Attack in the US, check this out",
+      "categories": ["Cyber Security"]
+    },
+    {
+        "id": "JlUxAjMAG2o",
+        "title": "ServiceNow Mock Interview No. 1",
+        "description": "Learn ServiceNow with their mock questions.",
+        "categories": [
+          "ServiceNow","Interview"
+        ]
+      },
+      {
+        "id": "BkniGmOLQWw",
+        "title": "Top Interview Questions For GRC , Auditor , Consultants  Learners",
+        "description": "GRC Interview Questions and Answers with Prabh Nair",
+        "categories": [
+          "GRC","Interview"
+        ]
+      },
+      {
+        "id": "C6IgksBpMF4",
+        "title": "The BEST Cyber Security GRC Training for Beginners | GRC Mastery",
+        "description": "Start a non-Technical Cyber Security Career! Get to know What is GRC? Should technical people do it? And Getting a GRC job",
+        "categories": [
+          "GRC"
+        ]
+      },{
+        "id": "H3qQv_6FTwA",
+        "title": "TPRM 101: What Is Third Party Risk Management (TPRM)?",
+        "description": "Understanding what TPRM is, Why is it necessary and used",
+        "categories": [
+          "GRC","Cyber Security"
+        ]
+      }
+  ]
+  

@@ -1,0 +1,237 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #08151c;
+    color: #00C062;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #F4CE14;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .nav-link {
+    color: #00C062;
+    text-decoration: none;
+    font-size: 1.2rem;
+    position: relative;
+    padding: 5px;
+  }
+  
+  .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #00C062;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #F4CE14;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  #search {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    background-color: #040D12;
+    color: #f3f3f3;
+    font-size: 1rem;
+  }
+  
+  #search:focus {
+    outline: none;
+    border: 2px solid #00C062;
+  }
+  
+  #categories {
+    margin: 20px 0;
+  }
+  
+  .category {
+    background-color: #040D12;
+    color: #f3f3f3;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px #00C062;
+  }
+  
+  .category.active {
+    background-color: #00C062;
+  }
+  
+  #video-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .video-card {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #040D12;
+    box-shadow: 0 4px 8px #00C062;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .video-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .video-card iframe {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .video-card .content {
+    padding: 15px;
+  }
+  
+  .video-card .content h3 {
+    margin: 0 0 10px;
+    font-size: 1.4em;
+    color: #00C062;
+  }
+  
+  .video-card .content p {
+    margin: 0;
+    color: #aaa;
+  }
+  
+  .video-card .tags {
+    margin-top: 10px;
+  }
+  
+  .video-card .tags span {
+    background-color: #040D12;
+    color: #f3f3f3;
+    border-radius: 3px;
+    padding: 2px 5px;
+    margin-right: 5px;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 8px #00C062;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    display: flex;
+    width: 90%;
+    height: 70%;
+    background-color: #040D12;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .modal-video {
+    flex: 7;
+    padding: 10px;
+  }
+  
+  .modal-video iframe {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .modal-recommendations {
+    flex: 3;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .modal-recommendations h2 {
+    margin: 0 0 20px;
+  }
+  
+  .modal-recommendations .recommendation-card {
+    display: flex;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  
+  .modal-recommendations .recommendation-card img {
+    width: 100px;
+    height: 60px;
+    border-radius: 5px;
+  }
+  
+  .modal-recommendations .recommendation-content {
+    margin-left: 10px;
+  }
+  
+  .modal-recommendations .recommendation-content h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #00C062;
+  }
+  
+  .modal-recommendations .recommendation-content p {
+    margin: 5px 0 0;
+    color: #aaa;
+  }
+  
+  @media (max-width: 480px) {
+    .video-card {
+      width: 100%;
+    }
+  
+    .modal-content {
+      flex-direction: column;
+    }
+  
+    .modal-video {
+      height: 60%;
+    }
+  
+    .modal-recommendations {
+      height: 40%;
+    }
+  }

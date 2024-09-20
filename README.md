@@ -10,7 +10,7 @@ Welcome to the **Explore Tab** of GeekRC! Here, you'll discover a wealth of reso
 - [Python Scripts](#python-scripts)
 - [GRC Videos](#grc-videos)
 - [Cyber News](#cyber-news)
-
+```
 ## Folder Structure
 /GeekRC
 │
@@ -89,6 +89,3 @@ Stay updated with the latest in Cyber Security and Information Security (Infosec
 ## Visit our website: [GeekRC](https://khaleelsyed8.github.io/GeekRC/).
 
 Thank you for exploring with us! We hope you find these resources valuable on your journey through the world of Cyber Security and GRC.
-```
-
-Feel free to adjust any parts to better suit your needs!

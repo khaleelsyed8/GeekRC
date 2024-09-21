@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (videoId) {
         fetchVideoDetails(videoId);
       } else {
-        alert('Invalid YouTube URL');
+        alert('Is this the right link?');
       }
     });
   
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   
     function fetchVideoDetails(videoId) {
-      const apiKey = 'Replace with your actual API key'; // 
+      const apiKey = 'AIzaSyBIIiOMA3yM4v8DBDxNBUAe5b2z3S0HBI0'; // Replace with your actual API key
       const apiUrl = `https://www.googleapis.com/youtube/v3/videos?id=${videoId}&key=${apiKey}&part=snippet`;
   
       fetch(apiUrl)
@@ -59,8 +59,8 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('video-description').value = video.description;
             document.getElementById('video-details').style.display = 'block';
           } else {
-            console.error('This Functionality has been disabled for Security reasons, We are finding an alternative.');
-            alert('This Functionality has been disabled for Security reasons');
+            console.error('Video not found');
+            alert('Video not found');
           }
         })
         .catch(error => {

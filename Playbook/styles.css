@@ -4,6 +4,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #f9f9f9;
+    padding-bottom: 20px;
 }
 
 header {
@@ -167,12 +168,13 @@ header nav a.play-book {
     cursor: pointer;
 }
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    padding: 10px;
     background-color: #12AD2B;
     color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
 }
 @media (max-width: 540px) {
     header nav a {

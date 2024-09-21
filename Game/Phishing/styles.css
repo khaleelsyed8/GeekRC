@@ -4,6 +4,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    width: 100%;
+    padding-bottom: 50px;
 }
 
 nav {
@@ -117,8 +119,13 @@ footer{
     background-color: #000;
     color: #fff;
     font-size: medium;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    padding: 10px;
+}
+footer p{
+    padding: 5px;
 }
 footer a{
     color: rgb(72, 158, 229);

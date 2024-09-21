@@ -5,12 +5,13 @@
     --text-color-light: #000000;
     --hover-underline-color: #F4CE14; }
 
-body {
+body,html {
     background-color: var(--background-color-light);
     color: var(--text-color-light);
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    padding-bottom: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
@@ -135,11 +136,15 @@ button:hover {
     cursor: pointer;
 }
 footer {
-    background-color: var(--primary-color-light);
-    color: rgb(0, 0, 0);
+    background-color: var(--accent-color);
+    color: var(--background-color-light);
+    font-weight: 500;
     padding: 10px 0;
     text-align: center;
     margin-top: 10px;
+    bottom: 0%;
+    position: fixed;
+    width: 100%;
 }
 @media only screen and (max-width: 1200px){
     .sidebar{

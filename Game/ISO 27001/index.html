@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISO 27001 Certification Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="information">
+        <H4><a href="../home.html"> &lt; Go Home</a> | Welcome to the game</H4>
+        <p>Enter the number if choice clicks don't work</p>
+        <p>Note 1: Remember more the risk, more chances you fail</p>
+        <p>Note 2: Remember less the risk, more chances you win</p>
+        <p>Important: Keep a track on the points table</p>
+        <div class="game-container">
+            <!-- Stats Bar -->
+            <div class="stats-bar">
+                <div class="stat">Security: <span id="security">50</span></div>
+                <div class="stat">Budget: <span id="budget">100000</span></div>
+                <div class="stat">Risk: <span id="risk">50</span></div>
+                <div class="stat">Compliance: <span id="compliance">20</span></div>
+                <div class="stat">Morale: <span id="morale">75</span></div>
+            </div>
+    
+            <!-- Chat Box -->
+            <div class="chat-container">
+                <div class="chat-box" id="chat-box"></div>
+                <div class="input-area">
+                    <input type="text" id="user-input" placeholder="Type your message..." onkeypress="handleKeyPress(event)" />
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

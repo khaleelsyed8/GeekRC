@@ -1,0 +1,277 @@
+{
+    "scenarios": [
+      {
+        "role": "CISO",
+        "question": "Your company is facing a potential data breach. What action do you take first?",
+        "options": [
+          { "text": "Implement immediate incident response procedures.", "effects": { "security": 20, "risk": -15, "compliance": 10 } },
+          { "text": "Conduct a full security audit.", "effects": { "security": 10, "risk": -5, "budget": -5000 } },
+          { "text": "Delay action until more information is available.", "effects": { "risk": 20, "compliance": -10 } }
+        ]
+      },
+      {
+        "role": "CISO",
+        "question": "A new regulatory requirement mandates encryption for all sensitive data. What do you do?",
+        "options": [
+          { "text": "Upgrade all systems to comply with encryption standards.", "effects": { "security": 25, "budget": -20000, "compliance": 15 } },
+          { "text": "Assess the cost and delay implementation.", "effects": { "security": 5, "risk": 10, "budget": -1000 } },
+          { "text": "Opt for a partial encryption solution to save costs.", "effects": { "security": 10, "budget": -5000, "compliance": 5 } }
+        ]
+      },
+      {
+        "role": "CISO",
+        "question": "Your team has identified a vulnerability in your web application. What is your response?",
+        "options": [
+          { "text": "Apply patches and update the application immediately.", "effects": { "security": 20, "risk": -20, "budget": -10000 } },
+          { "text": "Schedule the update for the next maintenance window.", "effects": { "security": 10, "risk": 5, "budget": 0 } },
+          { "text": "Ignore it and hope it doesn’t get exploited.", "effects": { "risk": 25, "security": -10 } }
+        ]
+      },
+      {
+        "role": "CISO",
+        "question": "You have been informed of a potential insider threat. How do you address it?",
+        "options": [
+          { "text": "Implement additional monitoring and access controls.", "effects": { "security": 15, "risk": -10, "budget": -8000 } },
+          { "text": "Conduct an internal investigation and interview the suspect.", "effects": { "security": 10, "risk": -5, "morale": -5 } },
+          { "text": "Wait for concrete evidence before taking action.", "effects": { "risk": 20, "security": -10 } }
+        ]
+      },
+      {
+        "role": "CISO",
+        "question": "Your company’s disaster recovery plan is outdated. What do you do?",
+        "options": [
+          { "text": "Revise and test the disaster recovery plan immediately.", "effects": { "security": 20, "compliance": 10, "budget": -15000 } },
+          { "text": "Review it during the next quarterly meeting.", "effects": { "security": 5, "risk": 5, "budget": 0 } },
+          { "text": "Assume the current plan is sufficient and take no action.", "effects": { "risk": 20, "compliance": -10 } }
+        ]
+      },
+      {
+        "role": "CISO",
+        "question": "There is a push for the company to adopt a new technology that lacks security certifications. What’s your stance?",
+        "options": [
+          { "text": "Conduct a thorough risk assessment before adoption.", "effects": { "security": 15, "risk": -10, "budget": -5000 } },
+          { "text": "Recommend delaying adoption until security certifications are available.", "effects": { "security": 5, "risk": -5, "budget": 0 } },
+          { "text": "Support adoption despite the lack of certifications.", "effects": { "risk": 20, "security": -10 } }
+        ]
+      },
+      {
+        "role": "CISO",
+        "question": "You’ve discovered that several employees are using unapproved applications. What do you do?",
+        "options": [
+          { "text": "Enforce a policy and block unauthorized applications.", "effects": { "security": 15, "morale": -10, "budget": -2000 } },
+          { "text": "Educate employees about the risks and hope they comply.", "effects": { "security": 5, "morale": -5, "budget": 0 } },
+          { "text": "Ignore it and allow employees to use their preferred tools.", "effects": { "risk": 15, "security": -5 } }
+        ]
+      },
+      {
+        "role": "CISO",
+        "question": "A recent audit revealed that your access control policies are not being followed. What is your next step?",
+        "options": [
+          { "text": "Reinforce policies and conduct additional training.", "effects": { "security": 10, "risk": -5, "budget": -3000 } },
+          { "text": "Update policies to match current practices.", "effects": { "security": 5, "risk": -10, "budget": -2000 } },
+          { "text": "Ignore the findings and continue with existing policies.", "effects": { "risk": 15, "security": -5 } }
+        ]
+      },
+      {
+        "role": "CISO",
+        "question": "Your company is considering a merger with a company that has a history of security issues. How do you proceed?",
+        "options": [
+          { "text": "Perform a comprehensive security due diligence review.", "effects": { "security": 20, "risk": -15, "budget": -10000 } },
+          { "text": "Proceed with the merger and address issues as they arise.", "effects": { "security": 5, "risk": 15, "budget": 0 } },
+          { "text": "Cancel the merger due to security concerns.", "effects": { "risk": -10, "budget": 0 } }
+        ]
+      },
+      {
+        "role": "CISO",
+        "question": "There is pressure to reduce the security budget. How do you handle it?",
+        "options": [
+          { "text": "Prioritize essential security measures and negotiate a minimal reduction.", "effects": { "security": 10, "budget": -5000, "risk": -10 } },
+          { "text": "Agree to the budget cut and reduce security measures.", "effects": { "security": -10, "budget": -15000, "risk": 15 } },
+          { "text": "Reject the budget cut and advocate for increased funding.", "effects": { "security": 20, "budget": -2000, "risk": -15 } }
+        ]
+      },
+      {
+        "role": "CISO",
+        "question": "Your company needs to implement a new security training program. What’s your approach?",
+        "options": [
+          { "text": "Develop and implement a comprehensive training program.", "effects": { "security": 15, "morale": 10, "budget": -8000 } },
+          { "text": "Select a basic training program and update it annually.", "effects": { "security": 5, "morale": 5, "budget": -2000 } },
+          { "text": "Postpone training and rely on existing measures.", "effects": { "risk": 20, "security": -10 } }
+        ]
+      },
+  
+      {
+        "role": "Internal Auditor",
+        "question": "During an audit, you find discrepancies in financial records. What do you do?",
+        "options": [
+          { "text": "Report the discrepancies to management and conduct a detailed investigation.", "effects": { "compliance": 20, "budget": -2000 } },
+          { "text": "Address the discrepancies in the next audit cycle.", "effects": { "compliance": 10, "budget": 0 } },
+          { "text": "Ignore the discrepancies if they seem minor.", "effects": { "compliance": -10 } }
+        ]
+      },
+      {
+        "role": "Internal Auditor",
+        "question": "You discover that a department is not adhering to compliance requirements. What’s your approach?",
+        "options": [
+          { "text": "Issue a formal report and recommend corrective actions.", "effects": { "compliance": 15, "morale": -5 } },
+          { "text": "Schedule a follow-up audit to check compliance.", "effects": { "compliance": 10, "morale": 0 } },
+          { "text": "Informally discuss the issues with the department head.", "effects": { "compliance": 5 } }
+        ]
+      },
+      {
+        "role": "Internal Auditor",
+        "question": "An internal control weakness is found during an audit. What action do you take?",
+        "options": [
+          { "text": "Document the weakness and recommend immediate improvements.", "effects": { "compliance": 15, "risk": -5, "budget": -3000 } },
+          { "text": "Add it to the list of items to review in the next audit.", "effects": { "compliance": 10, "risk": 5 } },
+          { "text": "Overlook it if it appears to be a low-risk issue.", "effects": { "compliance": -5 } }
+        ]
+      },
+      {
+        "role": "Internal Auditor",
+        "question": "You are asked to audit a new system that is still under development. What do you do?",
+        "options": [
+          { "text": "Assess the system’s development process and review security features.", "effects": { "compliance": 20, "risk": -10, "budget": -2000 } },
+          { "text": "Wait until the system is fully implemented before auditing.", "effects": { "compliance": 10, "risk": 5 } },
+          { "text": "Conduct a basic audit and review later once the system is operational.", "effects": { "compliance": 5, "risk": 0 } }
+        ]
+      },
+      {
+        "role": "Internal Auditor",
+        "question": "Your audit reveals that a critical policy has not been updated in years. What is your recommendation?",
+        "options": [
+          { "text": "Advise updating the policy to reflect current practices.", "effects": { "compliance": 15, "risk": -10, "budget": -1000 } },
+          { "text": "Suggest a review of the policy at the next scheduled audit.", "effects": { "compliance": 5, "risk": 0 } },
+          { "text": "Accept the policy as is if it seems to be working.", "effects": { "compliance": -5 } }
+        ]
+      },
+      {
+        "role": "Internal Auditor",
+        "question": "During an audit, you uncover potential fraud. What is your next step?",
+        "options": [
+          { "text": "Report the findings immediately and recommend a full investigation.", "effects": { "compliance": 20, "risk": -15, "budget": -3000 } },
+          { "text": "Conduct a preliminary investigation and report if necessary.", "effects": { "compliance": 10, "risk": -5 } },
+          { "text": "Ignore the findings if evidence is not conclusive.", "effects": { "compliance": -10 } }
+        ]
+      },
+      {
+        "role": "Internal Auditor",
+        "question": "You discover that a critical application lacks adequate backup procedures. What do you do?",
+        "options": [
+          { "text": "Recommend implementing robust backup procedures immediately.", "effects": { "compliance": 15, "risk": -10, "budget": -2000 } },
+          { "text": "Include it as a future improvement item in the next audit.", "effects": { "compliance": 10, "risk": 5 } },
+          { "text": "Overlook it if backups are being manually managed.", "effects": { "compliance": -5 } }
+        ]
+      },
+      {
+        "role": "Internal Auditor",
+        "question": "You find that user access rights are not reviewed regularly. What is your approach?",
+        "options": [
+          { "text": "Recommend a regular review process for user access rights.", "effects": { "compliance": 15, "risk": -10, "budget": -1500 } },
+          { "text": "Suggest adding it to the audit schedule for the next review.", "effects": { "compliance": 10, "risk": 5 } },
+          { "text": "Accept the current process if it appears to be working.", "effects": { "compliance": -5 } }
+        ]
+      },
+      {
+        "role": "Internal Auditor",
+        "question": "You’re tasked with auditing a vendor’s security practices. What do you do?",
+        "options": [
+          { "text": "Conduct a thorough security assessment of the vendor.", "effects": { "compliance": 20, "risk": -15, "budget": -3000 } },
+          { "text": "Review the vendor’s security documentation.", "effects": { "compliance": 10, "risk": -5 } },
+          { "text": "Accept the vendor’s assurances without additional checks.", "effects": { "compliance": -10 } }
+        ]
+      },
+  
+      {
+        "role": "Risk Manager",
+        "question": "You identified a critical server is outdated. What’s your next step?",
+        "options": [
+          { "text": "Patch the server immediately and assess risks.", "effects": { "security": 20, "budget": -15000, "risk": -15 } },
+          { "text": "Wait for the next budget cycle.", "effects": { "risk": 10, "security": -10, "budget": 0 } },
+          { "text": "Accept the risk and notify management.", "effects": { "risk": 5, "security": 0, "morale": -5 } }
+        ]
+      },
+      {
+        "role": "Risk Manager",
+        "question": "Your company is facing a high-profile lawsuit related to a security breach. What is your response?",
+        "options": [
+          { "text": "Allocate resources to handle the lawsuit and improve security measures.", "effects": { "security": 15, "risk": -20, "budget": -30000 } },
+          { "text": "Hire legal experts to manage the case and defer security upgrades.", "effects": { "risk": 10, "security": -5, "budget": -15000 } },
+          { "text": "Minimize costs by handling the lawsuit in-house.", "effects": { "risk": 20, "security": -10, "budget": -5000 } }
+        ]
+      },
+      {
+        "role": "Risk Manager",
+        "question": "You discover a new vulnerability in your company’s software. What’s your approach?",
+        "options": [
+          { "text": "Immediate patching and risk assessment.", "effects": { "security": 20, "risk": -15, "budget": -10000 } },
+          { "text": "Schedule a patch for the next update cycle.", "effects": { "risk": 10, "security": -10, "budget": -2000 } },
+          { "text": "Document the vulnerability and address it later.", "effects": { "risk": 25, "security": -15 } }
+        ]
+      },
+      {
+        "role": "Risk Manager",
+        "question": "You’re tasked with managing a new project with potential security risks. What’s your strategy?",
+        "options": [
+          { "text": "Implement comprehensive risk management strategies from the start.", "effects": { "security": 20, "risk": -20, "budget": -20000 } },
+          { "text": "Assess risks periodically and adjust strategies as needed.", "effects": { "security": 10, "risk": -10, "budget": -5000 } },
+          { "text": "Focus on project delivery and address risks later.", "effects": { "risk": 25, "security": -10 } }
+        ]
+      },
+      {
+        "role": "Risk Manager",
+        "question": "Your company is planning to expand into a new region with different regulatory requirements. What do you do?",
+        "options": [
+          { "text": "Conduct a thorough risk assessment and adapt policies accordingly.", "effects": { "security": 15, "risk": -15, "budget": -15000 } },
+          { "text": "Review existing policies and make minor adjustments.", "effects": { "security": 5, "risk": -5, "budget": -5000 } },
+          { "text": "Continue with current policies and address issues as they arise.", "effects": { "risk": 20, "security": -10 } }
+        ]
+      },
+      {
+        "role": "Risk Manager",
+        "question": "You’re given a tight deadline to complete a risk assessment for a major client. How do you handle it?",
+        "options": [
+          { "text": "Allocate extra resources and complete the assessment thoroughly.", "effects": { "security": 15, "risk": -10, "budget": -5000 } },
+          { "text": "Complete the assessment quickly with a basic review.", "effects": { "risk": 10, "security": -5, "budget": -2000 } },
+          { "text": "Request an extension to ensure a comprehensive assessment.", "effects": { "risk": -5, "security": 5, "budget": 0 } }
+        ]
+      },
+      {
+        "role": "Risk Manager",
+        "question": "You need to address a recent audit finding of inadequate physical security controls. What’s your approach?",
+        "options": [
+          { "text": "Implement immediate physical security enhancements.", "effects": { "security": 20, "risk": -15, "budget": -15000 } },
+          { "text": "Plan enhancements for the next fiscal year.", "effects": { "risk": 10, "security": -5, "budget": -5000 } },
+          { "text": "Assess the findings and address them as part of a larger security overhaul.", "effects": { "risk": 15, "security": -10, "budget": -3000 } }
+        ]
+      },
+      {
+        "role": "Risk Manager",
+        "question": "You’re facing resistance from stakeholders regarding a new risk management strategy. How do you handle it?",
+        "options": [
+          { "text": "Present a detailed justification and address their concerns.", "effects": { "risk": -10, "security": 10, "budget": -2000 } },
+          { "text": "Implement the strategy and provide updates as needed.", "effects": { "risk": 5, "security": -5, "budget": -1000 } },
+          { "text": "Postpone implementation until all stakeholders agree.", "effects": { "risk": 15, "security": -10 } }
+        ]
+      },
+      {
+        "role": "Risk Manager",
+        "question": "You’ve identified a significant risk that has a high impact but low likelihood. What’s your approach?",
+        "options": [
+          { "text": "Develop a mitigation plan and allocate resources to address the risk.", "effects": { "security": 15, "risk": -15, "budget": -10000 } },
+          { "text": "Monitor the risk and prepare contingency plans.", "effects": { "security": 5, "risk": -5, "budget": -2000 } },
+          { "text": "Accept the risk and allocate resources elsewhere.", "effects": { "risk": 20, "security": -10 } }
+        ]
+      },
+      {
+        "role": "Risk Manager",
+        "question": "A new technology introduces unknown risks. What is your strategy?",
+        "options": [
+          { "text": "Conduct a thorough risk assessment before adoption.", "effects": { "security": 20, "risk": -15, "budget": -10000 } },
+          { "text": "Adopt the technology with caution and review risks periodically.", "effects": { "security": 10, "risk": -5, "budget": -5000 } },
+          { "text": "Delay adoption until more information about risks is available.", "effects": { "risk": 15, "security": -10 } }
+        ]
+      }
+    ]
+  }
+  
